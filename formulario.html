@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+
+<h1>Cuestionario</h1>
+
+<form action="mailto:ejemplo@correo.com" method="post" enctype="text/plain">
+
+    <!-- Botones de opción -->
+    <fieldset>
+        <legend>¿Cuál es la naturaleza de tu comentario?</legend>
+
+        <label>
+            <input type="radio" name="naturaleza" value="reclamacion">
+            Reclamación
+        </label>
+
+        <label>
+            <input type="radio" name="naturaleza" value="felicitacion">
+            Felicitación
+        </label>
+
+        <label>
+            <input type="radio" name="naturaleza" value="queja">
+            Queja
+        </label>
+    </fieldset>
+
+    <br>
+
+    <!-- Lista desplegable -->
+    <label for="educacion">Educación:</label>
+
+    <select id="educacion" name="educacion">
+        <option value="basica">Educación básica</option>
+        <option value="preparatoria">Preparatoria</option>
+        <option value="tecnica">Técnica</option>
+        <option value="universidad">Universidad</option>
+    </select>
+
+    <br><br>
+
+    <!-- Área de texto -->
+    <label for="comentarios">Comentarios:</label><br>
+
+    <textarea
+        id="comentarios"
+        name="comentarios"
+        rows="6"
+        cols="45"
+        placeholder="Escribe tus comentarios aquí">
+    </textarea>
+
+    <br><br>
+
+    <h2>¿Cómo puedo comunicarme contigo?</h2>
+
+    <!-- Campos de texto -->
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre">
+
+    <br><br>
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo">
+
+    <br><br>
+
+    <label for="telefono">Teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono">
+
+    <br><br>
+
+    <!-- Casillas de verificación -->
+    <label>
+        <input type="checkbox" name="contacto_correo" value="si">
+        Comunícate conmigo vía correo electrónico
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="contacto_telefono" value="si">
+        Comunícate conmigo por teléfono
+    </label>
+
+    <br><br>
+
+    <!-- Botones -->
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+
+</form>
+
+<form>
+
+    <!-- Campo de texto -->
+    <label>Nombre:</label>
+    <input type="text" name="nombre">
+
+    <br><br>
+
+    <!-- Contraseña -->
+    <label>Contraseña:</label>
+    <input type="password" name="contrasena">
+
+    <br><br>
+
+    <!-- Checkbox -->
+    <input type="checkbox" name="deporte" value="futbol">
+    Fútbol
+
+    <input type="checkbox" name="deporte" value="basquetbol">
+    Básquetbol
+
+    <br><br>
+
+    <!-- Radio -->
+    <input type="radio" name="opcion" value="1">
+    Opción 1
+
+    <input type="radio" name="opcion" value="2">
+    Opción 2
+
+    <br><br>
+
+    <!-- Lista -->
+    <select name="programa">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="edge">Edge</option>
+        <option value="opera">Opera</option>
+    </select>
+
+    <br><br>
+
+    <!-- Área de texto -->
+    <textarea name="comentario" rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <!-- Botones -->
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+
+</form>
+</body>
+</html>
